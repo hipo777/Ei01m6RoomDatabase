@@ -19,6 +19,7 @@ class AgregarFragment : Fragment() {
 
         binding = FragmentAgregarBinding.inflate(layoutInflater, container, false)
         initListener()
+        recuperarTareas()
         return binding.root
     }
     private fun initListener() {
@@ -31,5 +32,13 @@ class AgregarFragment : Fragment() {
         val guardarDao = TareaBaseDatos.getDatabase(requireContext() ).getTaskDao()
         val tarea = Tarea(texto)
         GlobalScope.launch { guardarDao.insertarTarea(tarea) }
+    }
+    private fun recuperarTareas(){
+        val guardarDao = TareaBaseDatos.getDatabase(requireContext() ).getTaskDao()
+        GlobalScope.launch {
+            val tareas = guardarDao.getTareas()
+            val tasksAsText = tareas.joinToString("\n") { it.nombre }
+            binding.tvRecuperado.text = tasksAsText
+        }
     }
 }

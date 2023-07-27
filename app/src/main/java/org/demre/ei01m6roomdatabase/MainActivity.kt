@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.demre.ei01m6roomdatabase.databinding.ActivityMainBinding
 /*
-    [] Navigation
-    [] Fragmento para agregar
+    [x] Navigation
+    [x] Fragmento para agregar
     [] Crear Interfaz
     [] Room
         [] Dao

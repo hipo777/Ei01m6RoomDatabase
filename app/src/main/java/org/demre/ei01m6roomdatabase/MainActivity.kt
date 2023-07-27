@@ -6,11 +6,11 @@ import org.demre.ei01m6roomdatabase.databinding.ActivityMainBinding
 /*
     [x] Navigation
     [x] Fragmento para agregar
-    [] Crear Interfaz
-    [] Room
-        [] Dao
-        [] BaseDatos
-        [] Entity
+    [x] Crear Interfaz
+    [x] Room
+        [x] Dao
+        [x] BaseDatos
+        [x] Entity
     [] RecyclerView
     [] Fragmento para listado
 

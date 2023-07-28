@@ -11,7 +11,6 @@ import org.demre.ei01m6roomdatabase.databinding.FragmentAgregarBinding
 
 class AgregarFragment : Fragment() {
 
-
     lateinit var binding: FragmentAgregarBinding
     lateinit var repositorio: Repositorio
     override fun onCreateView(
